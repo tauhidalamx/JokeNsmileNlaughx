@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Joke N Smile N Laugh",
+  "version": "1.0.0",
+  "author": "Tauhid Alam",
+  "description": "Get instant energy with funny jokes, programming humor, and dad jokes on every click!",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
+    },
+    "default_title": "Joke N Smile N Laugh"
+  },
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "permissions": []
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joke N Smile N Laugh</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-group">
+        <span class="logo-icon">😄</span>
+        <div class="title-group">
+          <h1>Joke N Smile</h1>
+          <span class="tagline">Daily dose of laughter</span>
+        </div>
+      </div>
+      <button id="themeToggleBtn" class="icon-btn" title="Toggle theme" aria-label="Toggle theme">✨</button>
+    </header>
+
+    <!-- Categories -->
+    <div class="category-chips">
+      <button class="chip active" data-category="any">🌟 Random</button>
+      <button class="chip" data-category="geek">💻 Geek & Tech</button>
+      <button class="chip" data-category="dad">👨 Dad Jokes</button>
+      <button class="chip" data-category="general">🎭 General</button>
+    </div>
+
+    <!-- Joke Card -->
+    <main class="joke-card" id="jokeCard">
+      <div class="card-top">
+        <span class="joke-type-badge" id="jokeTypeBadge">GEEK JOKE</span>
+        <span class="joke-quote-icon">“</span>
+      </div>
+
+      <div class="joke-content-wrapper">
+        <div id="loadingSpinner" class="spinner-container hidden">
+          <div class="spinner"></div>
+          <p class="loading-text">Cooking up a fresh joke...</p>
+        </div>
+
+        <div id="jokeContent" class="joke-content">
+          <p id="jokeSetup" class="joke-setup"></p>
+          <p id="jokeDelivery" class="joke-delivery"></p>
+        </div>
+      </div>
+
+      <!-- Quick Actions inside Card -->
+      <div class="card-footer">
+        <div class="reactions">
+          <button class="react-btn" data-emoji="😂" title="Funny">😂 <span class="count">0</span></button>
+          <button class="react-btn" data-emoji="🤣" title="Hilarious">🤣 <span class="count">0</span></button>
+          <button class="react-btn" data-emoji="💀" title="Dead">💀 <span class="count">0</span></button>
+        </div>
+
+        <div class="tool-btns">
+          <button id="copyBtn" class="action-btn" title="Copy joke to clipboard">
+            <span class="btn-icon">📋</span>
+            <span class="btn-tooltip" id="copyTooltip">Copy</span>
+          </button>
+          <button id="shareBtn" class="action-btn" title="Share joke on X / Twitter">
+            <span class="btn-icon">🐦</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Controls -->
+    <div class="actions-section">
+      <button id="nextJokeBtn" class="primary-btn">
+        <span class="btn-text">Next Joke</span>
+        <span class="btn-sparkle">⚡</span>
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>Developed with ❤️ by Tauhid Alam</span>
+      <span class="version-tag">v1.0.0</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
